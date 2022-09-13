@@ -1,0 +1,28 @@
+{
+  "name": "sequelize-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "cross-env NODE_ENV=local nodemon app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon app.js",
+    "prod": "cross-env NODE_ENV=prod nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.4.1",
+    "@koa/router": "^12.0.0",
+    "axios": "^0.27.2",
+    "koa": "^2.13.4",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.6",
+    "sqlite3": "^5.0.11"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1"
+  }
+}
