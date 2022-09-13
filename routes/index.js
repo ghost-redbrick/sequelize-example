@@ -5,6 +5,10 @@ const models = initModels(db.sequelize);
 
 const router = new Router();
 
+router.get("/ip", async (ctx, next) => {
+  ctx.body = { ip: ctx.request.ip };
+});
+
 router.get("/artists", async (ctx, next) => {
   const artists = await models.Artists.findAll();
   ctx.body = artists;
